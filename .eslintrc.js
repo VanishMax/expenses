@@ -19,5 +19,8 @@ module.exports = {
       },
     }],
     'space-before-function-paren': [1, 'always'],
+
+    'import/extensions': 0,
+    'import/no-unresolved': 0,
   },
 };

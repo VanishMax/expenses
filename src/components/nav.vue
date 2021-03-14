@@ -1,8 +1,16 @@
 <template>
   <header>
-    <a href="/">
+    <router-link :to="{name: 'home'}" class="logo">
       <img src="/expenses.png" alt="expenses">
-    </a>
+    </router-link>
+    <nav>
+      <router-link :to="{name: 'login'}" class="btn">
+        Log In
+      </router-link>
+      <router-link :to="{name: 'settings'}" class="btn">
+        Settings
+      </router-link>
+    </nav>
   </header>
 </template>
 
@@ -22,7 +30,7 @@ header {
   padding: 1rem 2rem;
 }
 
-a {
+.logo {
   position: relative;
   color: #424567;
   font-size: 1.1em;
@@ -31,7 +39,15 @@ a {
   white-space: nowrap;
 }
 
-img {
+.logo img {
   height: 50px;
+}
+
+nav {
+  display: flex;
+}
+
+nav > * {
+  margin-left: 1.5rem;
 }
 </style>

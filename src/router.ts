@@ -21,6 +21,11 @@ const routes = [
     path: '/signup',
     component: () => import('./pages/signup.vue'),
   },
+  {
+    name: 'error',
+    path: '/:pathMatch(.*)*',
+    component: () => import('./pages/error.vue'),
+  },
 ];
 
 const router = createRouter({

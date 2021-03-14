@@ -1,10 +1,17 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: #eaebf1;
+  color: #424567;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
-body, html {
+html, body {
   margin: 0;
   padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .btn {
@@ -19,7 +26,8 @@ body, html {
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: .025em;
-  font-size: 14px;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 .btn:hover {

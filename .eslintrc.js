@@ -19,6 +19,8 @@ module.exports = {
       },
     }],
     'space-before-function-paren': [1, 'always'],
+    'no-underscore-dangle': 0,
+    'no-trailing-spaces': 0,
 
     'import/extensions': 0,
     'import/no-unresolved': 0,

@@ -2,16 +2,26 @@
   "name": "vite",
   "version": "0.0.0",
   "scripts": {
+    "vercel": "vercel dev",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint --fix ."
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.4",
     "vue": "^3.0.5",
     "vue-router": "^4.0.5"
   },
   "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongodb": "^3.6.9",
+    "@types/node": "^14.14.34",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
     "@typescript-eslint/parser": "^4.17.0",
     "@vitejs/plugin-vue": "^1.1.5",

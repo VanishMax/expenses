@@ -26,7 +26,7 @@ router.get('/profile', async (req, res) => {
   const token = req.headers.authorization || '';
   const auth = verifyAccessToken(token);
   if (auth) {
-    const Users = await getCollection<User>('users');
+    const Users = await getCollection('users');
     const user = await Users.findOne({
       _id: new ObjectID(auth._id),
     }, {
@@ -42,7 +42,7 @@ router.get('/profile', async (req, res) => {
 
 router.post('/register', (req, res) => {
   parseRequest(req, res, async (body: { name: string, email: string, password: string }) => {
-    const Users = await getCollection<User>('users');
+    const Users = await getCollection('users');
     const {
       name, email, password,
     } = body;
@@ -82,7 +82,7 @@ router.post('/register', (req, res) => {
 
 router.post('/login', (req, res) => {
   parseRequest(req, res, async (body: { email: string, password: string }) => {
-    const Users = await getCollection<User>('users');
+    const Users = await getCollection('users');
     const { email, password } = body;
 
     const fieldErrors = { email: '', password: '' };
